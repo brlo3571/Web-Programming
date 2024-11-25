@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quote of the Day</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quote of the Day</h1>
+    </header>
+    <a href="../about.html" style="position: absolute; top: 10px; right: 10px; text-decoration: none; padding: 10px 15px; background-color: #007BFF; color: white; border-radius: 5px; font-size: 14px;">Back</a>
+    <main>
+        <section class="show">
+            <script src="script.js"></script>
+        </section>
+        
+        <section class="show2">
+            <p>My favorite websites:</p>
+            <script type="text/javascript">
+                //list of all current websites
+                var favoriteWebsites = [
+                    { name: "Google", url: "https://www.google.com" },
+                    { name: "YouTube", url: "https://www.youtube.com" },
+                    { name: "Facebook", url: "https://www.facebook.com" }
+                ];
+                //writes out the websites
+                document.write("<ul><li><a href='" + favoriteWebsites[0].url + "' target='_blank'>" + favoriteWebsites[0].name + "</a></li></ul>");
+                document.write("<ul><li><a href='" + favoriteWebsites[1].url + "' target='_blank'>" + favoriteWebsites[1].name + "</a></li></ul>");
+                //asks for new website from the user and will write it out
+                var favoriteWebsiteName = prompt("Enter the name of your favorite website:");
+                var favoriteWebsiteURL = prompt("Enter the URL of your favorite website:\nex: https://github.com");
+                favoriteWebsites.pop();
+                favoriteWebsites.push({ name: favoriteWebsiteName, url: favoriteWebsiteURL });
+                document.write("<ul><li><a href='" + favoriteWebsites[2].url + "' target='_blank'>" + favoriteWebsites[2].name + "</a></li></ul>");
+            </script>
+        </section>
+    </main>
+</body>
+</html>
+
+

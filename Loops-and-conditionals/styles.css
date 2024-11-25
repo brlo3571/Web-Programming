@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(18, 18, 18);
+}
+
+#titleText{
+    font-family: Arial, sans-serif;
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 15px;
+    
+}
+
+.borderText{
+    margin: auto;
+    max-width: 700px;
+}
+
+#score{
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 70px;
+}
